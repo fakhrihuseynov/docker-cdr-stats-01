@@ -11,7 +11,7 @@ ADD cdr-stats-functions.sh /usr/src/cdr-stats-functions.sh
 RUN chmod 755 /usr/src/install-cdr-stats.sh
 RUN git clone https://github.com/cdr-stats/cdr-stats.git
 ADD django.txt /usr/src/cdr-stats/requirements/django.txt
-#RUN /usr/src/install-cdr-stats.sh
+RUN /usr/src/install-cdr-stats.sh
 
 EXPOSE 80 8080 8008 5432
 
